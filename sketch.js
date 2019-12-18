@@ -17,12 +17,31 @@ function setup(){
 
 function draw() {
 
+    /* input things from sensors */
+    inputStuff();
+
     /* calculate math things first */
     calculateStuff();
 
     /* display what you calculated */
     displayStuff();
 }
+
+function inputStuff(){
+    if (keyIsDown(LEFT_ARROW)) {
+        posX -= 10;
+        if (posX <= 0){
+            posX = 0;
+        }
+    } else if(keyIsDown(RIGHT_ARROW)) {
+        posX += 10;
+        if (posX >= width - cursorW){
+            posX = width - cursorW;
+        }
+    }
+}
+
+
 
 function calculateStuff(){
 
