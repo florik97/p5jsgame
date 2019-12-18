@@ -2,10 +2,11 @@
 
 function setup(){
   createCanvas(640, 480);
-  background(255, 0, 100);
 }
 
 
 function draw() {
-  
+  clear();
+  background(255, 0, 100);
+  rect(30, 20, 55, 55);
 }
