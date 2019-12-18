@@ -3,6 +3,7 @@
 function setup(){
   createCanvas(640, 480);
   fill(255);
+  stroke(0);
 }
 
 
