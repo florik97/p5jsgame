@@ -8,7 +8,7 @@ function setup(){
     fill(255);
     noStroke();
 
-    cursorW = 50;
+    cursorW = 40;
     cursorH = 5;
     posX = width/2 - cursorW/2;
     posY = height - 20;
